@@ -14,9 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-slate-200">
        <EmployeeProvider>
+       <div className="max-w-5xl mx-auto px-4">
           {children}
+       </div>
        </EmployeeProvider> 
       </body>
     </html>
