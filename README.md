@@ -31,18 +31,27 @@ A modern **Employee Management System** built with **React**, **TypeScript**, **
 Follow these steps to get started with the project:
 
 1️. Prerequisites
+
     Make sure you have the following installed:
+
     Node.js: Download Node.js
+
     npm or yarn package manager.
 
 2️. Installation
+
     Clone the repository and install dependencies:
+
     git clone https://github.com/azadeh-frau/Employee-Management-System.git
+
     cd employee-management-system
+
     npm install
 
 3️. Run the Application
+
     Start the development server:
+
     npm start
 
 The app will be available at http://localhost:3000.
@@ -51,33 +60,33 @@ The app will be available at http://localhost:3000.
 
 ### 🖥️ View Employees:
 
-    Displays a list of employees with name, position, and email.
-    Designed for fast and responsive performance.
+Displays a list of employees with name, position, and email.
+Designed for fast and responsive performance.
 
 ### ➕ Add Employees:
 
-    Simple form for adding new employees.
-    Input validation using React Hook Form and Yup.
+Simple form for adding new employees.
+Input validation using React Hook Form and Yup.
 
 ### ✏️ Edit Employees:
 
-    Editable forms for updating employee details.
-    Changes are immediately reflected in the list.
+Editable forms for updating employee details.
+Changes are immediately reflected in the list.
 
 ### ❌ Delete Employees:
 
-    Remove employees with a single click.
-    Confirmation alerts can be added as an enhancement.
+Remove employees with a single click.
+Confirmation alerts can be added as an enhancement.
 
 ### 🔍 Filter Employees:
 
-    Quickly search for employees by name or position.
-    Filters update dynamically as you type.
+Quickly search for employees by name or position.
+Filters update dynamically as you type.
 
 ### 📡 API Integration:
 
-    Uses Axios for seamless data fetching and manipulation.
-    Can be connected to a custom backend or mock API.
+Uses Axios for seamless data fetching and manipulation.
+Can be connected to a custom backend or mock API.
 
 ## 🛠️ Development Workflow:
 
