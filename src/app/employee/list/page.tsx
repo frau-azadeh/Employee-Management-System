@@ -1,21 +1,38 @@
 "use client";
 
-import React from "react";
-import { useEmployeeContext } from "@/context/EmployeeContext";
+import React, { useEffect, useState } from "react";
+import EmployeeTable from "@/components/EmployeeTable";
+import api from "@/utils/axiosConfig"; // مسیر را چک کن
+
+interface Employee {
+  id: string;
+  name: string;
+  position: string;
+  email: string;
+}
 
 export default function EmployeesPage() {
-  const { employees } = useEmployeeContext();
-  
-  console.log("Employees from Context in List Page:", employees); // بررسی مقدار
+  const [employees, setEmployees] = useState<Employee[]>([]);
+
+  useEffect(() => {
+    const fetchEmployees = async () => {
+      try {
+        const response = await api.get("/employee/managment");
+        setEmployees(response.data);
+        console.log("Fetched Employees:", response.data);
+      } catch (error) {
+        console.error("Error fetching employees:", error);
+      }
+    };
+    fetchEmployees();
+  }, []);
 
   return (
-    <div>
-      <h1>Employees</h1>
-      <ul>
-        {employees.map((employee) => (
-          <li key={employee.id}>{employee.name}</li>
-        ))}
-      </ul>
+    <div className="container mx-auto p-6">
+      <h1 className="text-2xl font-bold mb-6 text-center text-gray-700">
+        Employees List
+      </h1>
+      <EmployeeTable employees={employees} />
     </div>
   );
 }
