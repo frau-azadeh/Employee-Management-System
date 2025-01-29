@@ -14,9 +14,9 @@ export const AddEmployeeForm: React.FC = () => {
     const {addEmployee} = useEmployeeContext();
     const {register, handleSubmit, reset} = useForm<FormInput>();
  
- const onSubmit = (data: FormInput) =>{
-    console.log("Form Data:", data); // بررسی داده‌های فرم
-    addEmployee(data); // اضافه کردن به Context
+ const onSubmit = async (data: FormInput) =>{
+    console.log("Form Data:", data); 
+    await addEmployee(data); 
     reset();
  }
 
