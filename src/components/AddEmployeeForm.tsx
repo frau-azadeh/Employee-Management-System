@@ -15,9 +15,11 @@ export const AddEmployeeForm: React.FC = () => {
     const {register, handleSubmit, reset} = useForm<FormInput>();
  
  const onSubmit = (data: FormInput) =>{
-    addEmployee(data);
+    console.log("Form Data:", data); // بررسی داده‌های فرم
+    addEmployee(data); // اضافه کردن به Context
     reset();
  }
+
     return (
     <div className='flex items-center justify-center h-screen '>
         <form onSubmit={handleSubmit(onSubmit)} className='p-4 bg-slate-400 rounded-lg shadow w-full max-w-md'>
@@ -41,7 +43,7 @@ export const AddEmployeeForm: React.FC = () => {
             <div className='mb-4'>
                 <label className='block text-md font-medium text-white'>Email: </label>
                 <input
-                    {...register("position", {required: true})}
+                    {...register("email", {required: true})}
                     className='mt-1 block w-full border-gray-300 rounded-md shadow-cyan-300 p-2'
                     type="email"
                     placeholder='Enter Email'
