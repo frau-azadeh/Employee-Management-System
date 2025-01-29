@@ -23,6 +23,7 @@ export const EmployeeProvider = ({ children } : {children: ReactNode}) =>{
            ...prev,
           { ...employee, id: Date.now().toLocaleString() } ,
         ]);
+        console.log("Updated Employees:", employees);
     };
     return(
         <EmployeeContext.Provider value= {{employees, addEmployee}} >
