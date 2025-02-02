@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import EmployeeTable from "@/components/EmployeeTable";
-import api from "@/utils/axiosConfig"; // مسیر را چک کن
+import api from "@/utils/axiosConfig"; 
 
 interface Employee {
   id: string;
