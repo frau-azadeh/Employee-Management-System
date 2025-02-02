@@ -16,8 +16,8 @@ interface EmployeeTableProps {
 const EmployeeTable: React.FC<EmployeeTableProps> = ({ employees }) => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full bg-white border border-gray-300 shadow-lg rounded-lg">
-        <thead className="bg-gray-200 text-gray-700">
+      <table className="min-w-full bg-white border  border-gray-300 shadow-lg rounded-lg">
+        <thead className="bg-gray-700 text-white">
           <tr>
             <th className="px-4 py-3 text-left">Name</th>
             <th className="px-4 py-3 text-left">Position</th>
