@@ -35,11 +35,11 @@ const addEmployee = async (employee: Omit<Employee, "id">) => {
     try {
       const response = await api.post("/employee/managment", employee);
       
-      console.log("Server Response:", response.data); // بررسی پاسخ سرور
+      console.log("Server Response:", response.data); 
       
       setEmployees((prev) => [...prev, response.data]);
       
-      console.log("Updated Employees List:", employees); // بررسی ذخیره شدن
+      console.log("Updated Employees List:", employees); 
     } catch (error) {
       console.error("Error adding employee:", error);
     }
