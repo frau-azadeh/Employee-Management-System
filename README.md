@@ -28,6 +28,7 @@ A modern **Employee Management System** built with **React**, **TypeScript**, **
 ---
 
 ## 🚀 Getting Started
+
 Follow these steps to get started with the project:
 
 1️. Prerequisites
@@ -111,16 +112,14 @@ Fetch data from an API for employees.
 Use services for reusable API calls.
 
 ## 🌟 Future Enhancements
+
 Add pagination for the employee list.
 Implement authentication for managing employee data.
 Add confirmation modals for critical actions (e.g., deleting employees).
 Build a dashboard with charts for employee statistics.
 
 ## 🤝 Contributing
+
 🌻 Azadeh Sharifi Soltani
 
 Feel free to contribute to this project by submitting a pull request or opening an issue! Made with 💻, ☕, and 🌻 by Azadeh Sharifi Soltani
-
-
-
-

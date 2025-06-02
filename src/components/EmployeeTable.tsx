@@ -27,7 +27,10 @@ const EmployeeTable: React.FC<EmployeeTableProps> = ({ employees }) => {
         <tbody>
           {employees.length > 0 ? (
             employees.map((employee) => (
-              <tr key={employee.id} className="hover:bg-gray-700 hover:text-white text-center">
+              <tr
+                key={employee.id}
+                className="hover:bg-gray-700 hover:text-white text-center"
+              >
                 <td className="border px-4 py-2">{employee.name}</td>
                 <td className="border px-4 py-2">{employee.position}</td>
                 <td className="border px-4 py-2">{employee.email}</td>
