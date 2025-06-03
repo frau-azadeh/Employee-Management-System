@@ -9,6 +9,7 @@ export default function NotFoundPage(){
             alt="not-found"
             width={400}
             height={400}
+            priority
             className="rounded-2xl shadow hover:scale-105"
            />
            <GoBack/>
