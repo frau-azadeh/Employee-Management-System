@@ -1,16 +1,10 @@
-'use client'
-import { useRouter } from 'next/navigation'
-import React from 'react'
+"use client";
+import { useRouter } from "next/navigation";
+import React from "react";
 
 const GoBack = () => {
-    const router = useRouter();
-  return (
-    <button
-        onClick={()=>router.back()}
-    >
-        Go Back
-    </button>
-)
-}
+  const router = useRouter();
+  return <button onClick={() => router.back()}>Go Back</button>;
+};
 
-export default GoBack
+export default GoBack;

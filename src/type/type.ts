@@ -1,5 +1,5 @@
-export interface PostPage{
-    id: number;
-    title: string;
-    body: string;
+export interface PostPage {
+  id: number;
+  title: string;
+  body: string;
 }
