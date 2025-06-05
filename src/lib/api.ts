@@ -1,6 +1,5 @@
-import { AxiosError } from "axios";
-import type { PostPage } from "@/type/type";
-import axios from "axios";
+import { PostPage } from "@/type/type";
+import axios, { AxiosError } from "axios";
 
 const jsonApi = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com",
@@ -24,14 +23,11 @@ export async function getPostById(id: string): Promise<PostPage | null> {
   } catch (error) {
     if (error instanceof AxiosError) {
       const status = error.response?.status;
-
       if (status === 404) {
         console.warn(`Post not found: id=${postId}`);
       } else {
         console.error(`Failed to fetch id=${postId}`, error.message);
       }
-    } else {
-      console.error("Unexpected error while fetching post:", error);
     }
     return null;
   }
