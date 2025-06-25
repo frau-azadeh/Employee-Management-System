@@ -32,4 +32,3 @@ export async function getPostById(id: string): Promise<PostPage | null> {
     return null;
   }
 }
-
