@@ -1,8 +1,10 @@
 "use client";
 
-import { useEmployeeContext } from "@/context/EmployeeContext";
 import React from "react";
+
 import { useForm } from "react-hook-form";
+
+import { useEmployeeContext } from "@/context/EmployeeContext";
 
 interface FormInput {
   name: string;

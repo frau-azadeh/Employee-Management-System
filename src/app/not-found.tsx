@@ -1,5 +1,6 @@
-import GoBack from "@/components/GoBack";
 import Image from "next/image";
+
+import GoBack from "@/components/GoBack";
 
 export default function NotFoundPage() {
   return (

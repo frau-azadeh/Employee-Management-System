@@ -1,6 +1,7 @@
-import GoBack from "@/components/GoBack";
 import { getPostById } from "@/lib/api";
 import { notFound } from "next/navigation";
+
+import GoBack from "@/components/GoBack";
 
 interface PostPageProps {
   params: {

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+
 import { EmployeeProvider } from "@/context/EmployeeContext";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
